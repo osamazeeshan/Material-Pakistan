@@ -8,7 +8,7 @@
 
 ## About
 
-Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time. The developers are proud Pakistanis who hope to make more Pakistani content for other proud Pakistanis! Pakistan Zindabad!
+Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time!
 
 Currently, we have included SIX monuments of Pakistan, including:
 
@@ -18,3 +18,5 @@ Currently, we have included SIX monuments of Pakistan, including:
 - Minare Pakistan
 - Monument
 - Minar-e-Quaid
+
+# All of the wallpapers were designed by <a href="url">Salman Afzal</a>
