@@ -1,6 +1,5 @@
-## Material Pakistan
 
-<p align="center"><b>A live wallpaper app to show the astonishing monuments of Pakistan.</b></p>
+<h1 style="text-align:center;">A live wallpaper app to show the astonishing monuments of Pakistan</h1>
 
 <p align="center">
   <img src="./app/src/main/assets/splash_image.jpg">
@@ -10,7 +9,9 @@
 
 Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time!
 
-There are currently six live wallpaper of astonishing monuments in Pakistan:
+
+### There are currently six live wallpaper of astonishing monuments in Pakistan:
+
 
 <p align="center"> <img src="./app/src/main/res/drawable/live_badshahi_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_faisal_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_khyberpass_icon.png"> </p>
 
