@@ -21,7 +21,7 @@ There are five variants of each six monuments which change with time
 
 ### Morning
 
-<p align="center"> <img src="./app/src/main/assets/quaid_morning.jpg"> <img src="./app/src/main/assets/minare_pak_morning.jpg"> </p>
+<p align="center"> <img src="./app/src/main/assets/quaid_morning.jpg" width="200" height="200"> <img src="./app/src/main/assets/minare_pak_morning.jpg" width="200" height="200"> </p>
 
 ### Noon
 ### Evening
