@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/sign_up_container_scroll_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--tools:ignore="UselessParent">-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/static_wallpaper_bk">
+
+                <TextView
+                    android:id="@+id/intro_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="#37474F"
+                    android:text="@string/about_intro_text"/>
+
+                <TextView
+                    android:id="@+id/version_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#37474F"
+                    android:text="@string/about_version_number"/>
+
+                <TextView
+                    android:id="@+id/team_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#37474F"
+                    android:text="@string/about_team_name"/>
+            </LinearLayout>
+
+            <!--<Button-->
+                <!--android:layout_width="320dp"-->
+                <!--android:layout_height="130dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/button_buy"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:id="@+id/footer_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:text="@string/about_footer_text"/>
+
+                <TextView
+                    android:id="@+id/rights_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/footer_text_view"
+                    android:textSize="12sp"
+                    android:text="@string/about_footer_rights_text"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

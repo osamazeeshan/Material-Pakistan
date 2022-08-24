@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Material Pakistan</string>
+    <string name="live_wallpaper_text">Live</string>
+    <string name="static_wallpaper_text">Static</string>
+    <string name="set_wallpaper_text">Set Wallpaper</string>
+    <string name="wallpaper_set_text">Wallpaper set</string>
+
+    <string name="about_intro_text">Ever since we were young we saw that there was very little Pakistani content in the digital world. So we embarked on this journey to create as much content as we can in our free time. The developers are proud Pakistanis who hope to make more Pakistani content for other proud Pakistanis! Pakistan Zindabad!</string>
+    <string name="about_version_number">Version 1</string>
+    <string name="about_team_name">-Team StrokeShore</string>
+    <string name="about_footer_text">Keep your country clean! Don\'t do drugs! Don\'t use calibri!</string>
+    <string name="about_footer_rights_text">"&#64; 2017 StrokeShore"</string>
+
+    <string name="quaid_text">"Mazar-e-Quaid"</string>
+    <string name="faisal_mosque_text">"Faisal Mosque"</string>
+    <string name="khyberpass_text">"Khyber Pass"</string>
+    <string name="badshahi_mosque_text">"Badshahi Mosque"</string>
+    <string name="minare_pak_text">"Minar-e-Pakistan"</string>
+    <string name="monument_text">"Islamabad Monument"</string>
+
+    <string name="LiveWallpaperTabTag">LiveTab</string>
+    <string name="StaticWallpaperTabTag">StaticTab</string>
+
+    <string name="pref_night_mode">PrefNightMode</string>
+
+    <string name="SettingsActivityTag">SettingsActivity</string>
+    <string name="PreviewWallpaperFragmentTag">PreviewWallpaperFragment</string>
+
+    <string name="banner_home_footer">ca-app-pub-7190841200146012/2536097180</string>
+    <string name="admob_app_id">ca-app-pub-7190841200146012~6694834043</string>
+    <string name="banner_home_footer_test">ca-app-pub-3940256099942544/6300978111</string>
+
+</resources>

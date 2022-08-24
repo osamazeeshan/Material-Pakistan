@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings"
+    android:key="wallpaperSettings"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="Night Mode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <SwitchPreference
+            android:key="@string/pref_night_mode"
+            android:defaultValue="false"
+            android:title="Black background at night"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

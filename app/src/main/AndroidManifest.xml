@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.materiallandmarks" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launch"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!--<service-->
+            <!--android:name=".landmarkservice.FaisalMosqueLandmarkService"-->
+            <!--android:enabled="true"-->
+            <!--android:label="Landmark of ISB"-->
+            <!--android:permission="android.permission.BIND_WALLPAPER">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.service.wallpaper.WallpaperService"></action>-->
+            <!--</intent-filter>-->
+            <!--<meta-data-->
+                <!--android:name="android.service.wallpaper"-->
+                <!--android:resource="@xml/thumbnail">-->
+            <!--</meta-data>-->
+        <!--</service>-->
+
+        <service
+            android:name="com.materiallandmarks.landmarkservice.MinarePakLandmarkService"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:label="Landmark of Minar-e-Paistan"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/minare_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.KhyberPassLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Khyber Pass"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/khyber_pass_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.BadshahiMosqueLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Badshahi Mosque"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/badshahi_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.FaisalMosqueLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Faisal Mosque"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/faisal_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.MonumentLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Monument"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/monument_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.QuaidLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Mazar-e-Quaid"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/quaid_thumbnail">
+            </meta-data>
+        </service>
+
+        <service
+            android:name=".landmarkservice.RandomLandmarkService"
+            android:enabled="true"
+            android:label="Landmark of Mazar-e-Quaid"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/random_thumbnail">
+            </meta-data>
+        </service>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version">
+        </meta-data>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1">
+        </meta-data>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.materiallandmarks.activity.SettingsActivity"
+            android:label="@string/SettingsActivityTag"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:action="android.intent.action.VIEW"
+            android:theme="@style/PreferencesTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#e3e7ed">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@color/colorSecondary">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Minar-e-Quaid"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:textColor="#ffffff"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:text="KHI"-->
+    <!--android:textColor="#ffffff"/>-->
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/static_wallpaper_bk">
+
+        <ImageView
+            android:id="@+id/wallpaper_preview_img"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/wallpaper_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mazar-e-Quaid"
+            android:textSize="26sp"
+            android:textColor="#455A64"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/wallpaper_preview_img" />
+
+
+        <ImageView
+            android:id="@+id/wallpaper_morning_img"
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+
+            android:layout_toRightOf="@+id/wallpaper_preview_img"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/wallpaper_afternoon_img"
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+
+            android:layout_toRightOf="@+id/wallpaper_morning_img"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/wallpaper_evening_img"
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/wallpaper_afternoon_img"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/wallpaper_night_img"
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/wallpaper_evening_img"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/wallpaper_night_black_img"
+            android:layout_width="45dp"
+            android:layout_height="75dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/wallpaper_night_img"
+            android:layout_marginLeft="5dp"/>
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:text="Set"
+            android:textSize="12sp"
+            android:background="#FF6F43"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
