@@ -21,12 +21,23 @@ There are five variants of each six monuments which change with time
 
 ### Morning
 
-<p align="center"> <img src="./app/src/main/assets/quaid_morning.jpg" width="200" height="200"> <img src="./app/src/main/assets/minare_pak_morning.jpg" width="200" height="200"> </p>
+<p align="center"> <img src="./app/src/main/assets/quaid_morning.jpg" width="180" height="300"> <img src="./app/src/main/assets/minare_pak_morning.jpg" width="180" height="300"> <img src="./app/src/main/assets/monument_morning.jpg" width="180" height="300"> </p>
 
-### Noon
+### Afternoon
+
+<p align="center"> <img src="./app/src/main/assets/quaid_afternoon.jpg" width="180" height="300"> <img src="./app/src/main/assets/minare_pak_afternoon.jpg" width="180" height="300"> <img src="./app/src/main/assets/monument_afternoon.jpg" width="180" height="300"> </p>
+
 ### Evening
+
+<p align="center"> <img src="./app/src/main/assets/quaid_evening.jpg" width="180" height="300"> <img src="./app/src/main/assets/minare_pak_evening.jpg" width="180" height="300"> <img src="./app/src/main/assets/monument_evening.jpg" width="180" height="300"> </p>
+
 ### Night
+
+<p align="center"> <img src="./app/src/main/assets/quaid_night.jpg" width="180" height="300"> <img src="./app/src/main/assets/minare_pak_night.jpg" width="180" height="300"> <img src="./app/src/main/assets/monument_night.jpg" width="180" height="300"> </p>
+
 ### Night (dark version)
+
+<p align="center"> <img src="./app/src/main/assets/quaid_night_black.jpg" width="180" height="300"> <img src="./app/src/main/assets/minare_pak_night_black.jpg" width="180" height="300"> <img src="./app/src/main/assets/monument_night_black.jpg" width="180" height="300"> </p>
 
 
 
