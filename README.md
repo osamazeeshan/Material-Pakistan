@@ -19,4 +19,4 @@ Currently, we have included SIX monuments of Pakistan, including:
 - Monument
 - Minar-e-Quaid
 
-# All of the wallpapers were designed by <a href="url">Salman Afzal</a>
+### All of the wallpapers were designed by <a href="u">Salman Afzal</a>.
