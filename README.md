@@ -1,6 +1,6 @@
 ## Material Pakistan
 
-<p align="center">A live wallpaper app to show the astonishing monuments of Pakistan.</p>
+<p align="center">**A live wallpaper app to show the astonishing monuments of Pakistan.</p>
 
 <p align="center">
   <img src="./app/src/main/assets/splash_image.jpg">
