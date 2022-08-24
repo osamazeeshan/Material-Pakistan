@@ -12,11 +12,9 @@ Ever since we were young we saw that there was very little Pakistani content in 
 
 There are currently six live wallpaper of astonishing monuments in Pakistan:
 
-<img src="./app/src/main/res/drawable/live_badshahi_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_faisal_mosque_icon.png">
+<img src="./app/src/main/res/drawable/live_badshahi_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_faisal_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_khyberpass_icon.png"> 
 
-<img src="./app/src/main/res/drawable/live_khyberpass_icon.png"> <img src="./app/src/main/res/drawable/live_minare_pak_icon.png">
-
-<img src="./app/src/main/res/drawable/live_monument_icon.png"> <img src="./app/src/main/res/drawable/live_quaid_icon.png">
+<img src="./app/src/main/res/drawable/live_minare_pak_icon.png"> <img src="./app/src/main/res/drawable/live_monument_icon.png"> <img src="./app/src/main/res/drawable/live_quaid_icon.png">
 
 
 ### All of the wallpapers were designed by <a href="u">Salman Afzal</a>.
