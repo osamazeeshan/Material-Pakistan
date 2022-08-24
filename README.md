@@ -20,3 +20,10 @@ Currently, we have included SIX monuments of Pakistan, including:
 - Minar-e-Quaid
 
 ### All of the wallpapers were designed by <a href="u">Salman Afzal</a>.
+
+
+## Note
+
+We created Material Pakistan a while back, and our original plan was to keep this app updated, but due to high-demanding jobs, we couldn't :) So now I'm making the source code public. 
+
+Anyone wants to use the code for learning purposes or to add more wallpapers, or just want to reuse the code. Please feel free to do so :)
