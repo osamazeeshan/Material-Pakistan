@@ -12,9 +12,22 @@ Ever since we were young we saw that there was very little Pakistani content in 
 
 There are currently six live wallpaper of astonishing monuments in Pakistan:
 
-<img src="./app/src/main/res/drawable/live_badshahi_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_faisal_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_khyberpass_icon.png"> 
+<p align="center"> <img src="./app/src/main/res/drawable/live_badshahi_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_faisal_mosque_icon.png"> <img src="./app/src/main/res/drawable/live_khyberpass_icon.png"> </p>
 
-<img src="./app/src/main/res/drawable/live_minare_pak_icon.png"> <img src="./app/src/main/res/drawable/live_monument_icon.png"> <img src="./app/src/main/res/drawable/live_quaid_icon.png">
+<p align="center"> <img src="./app/src/main/res/drawable/live_minare_pak_icon.png"> <img src="./app/src/main/res/drawable/live_monument_icon.png"> <img src="./app/src/main/res/drawable/live_quaid_icon.png"> </p>
+
+
+There are five variants of each six monuments which change with time
+
+### Morning
+
+<p align="center"> <img src="./app/src/main/assets/quaid_morning.jpg"> <img src="./app/src/main/assets/minare_pak_morning.jpg"> </p>
+
+### Noon
+### Evening
+### Night
+### Night (dark version)
+
 
 
 ### All of the wallpapers were designed by <a href="u">Salman Afzal</a>.
