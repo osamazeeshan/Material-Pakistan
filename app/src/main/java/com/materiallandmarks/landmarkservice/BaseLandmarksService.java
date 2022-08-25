@@ -97,11 +97,6 @@ public abstract class BaseLandmarksService extends WallpaperService {
             }
         }
 
-//        @Override
-//        public Bundle onCommand(String action, int x, int y, int z, Bundle extras, boolean resultRequested) {
-//            return super.onCommand(action, x, y, z, extras, resultRequested);
-//        }
-
         @Override
         public void onVisibilityChanged(boolean visible) {
             try {
@@ -166,15 +161,6 @@ public abstract class BaseLandmarksService extends WallpaperService {
                     if (canvas != null) {
                         mTimeInMillis = getTimeAndCalculateRemaining();
                         getBitmap();
-//                        Bitmap scaledBitmap = Bitmap.createScaledBitmap(mImage, 720, 1280, true);
-
-//                        String uri = String.format("@drawable/badshahi_mosque_evening");
-//                        int imageResource = getResources().getIdentifier(uri, null, getPackageName());
-//                        Drawable drawable = getResources().getDrawable(imageResource);
-//                        Bitmap scaledBitmap = ((BitmapDrawable)drawable).getBitmap();
-//                        mImage = scaledBitmap;
-//                        int w = mImage.getWidth();
-//                        int h = mImage.getHeight();
 
                         PointF mScale = getCanvasScale(mImage.getWidth(), mImage.getHeight());
                         if (mScale != null) {
@@ -190,7 +176,6 @@ public abstract class BaseLandmarksService extends WallpaperService {
                 }
                 mHandler.removeCallbacks(mDrawRunner);
                 if (mVisible) {
-                    //    mHandler.postDelayed(mDrawRunner, 10000);
                     mHandler.postAtTime(mDrawRunner, mTimeInMillis);
                 }
             } catch (Exception e) {
@@ -227,17 +212,12 @@ public abstract class BaseLandmarksService extends WallpaperService {
                         return String.format(Locale.getDefault(), "%s_%s_black_horizontal.jpg", getWallpaperLandmark(), wallpaperType);
                     }
                     return String.format(Locale.getDefault(), "%s_%s_black.jpg", getWallpaperLandmark(), wallpaperType);
-                //    return String.format(Locale.getDefault(), "khyberpass_night_black.png");
                 }
                 if(mIsLandscape) {
                     return String.format(Locale.getDefault(), "%s_%s_horizontal.jpg", getWallpaperLandmark(), wallpaperType);
-                    //return String.format(Locale.getDefault(), "khyberpass_morning_horizontal.png");
                 }
                 else {
-                //    mIsLandscape = true;
                     return String.format(Locale.getDefault(), "%s_%s.jpg", getWallpaperLandmark(), wallpaperType);
-//                    return String.format(Locale.getDefault(), "try1.jpg");
-                    //return String.format(Locale.getDefault(), "badshahi_mosque_night.jpg");
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -267,28 +247,6 @@ public abstract class BaseLandmarksService extends WallpaperService {
                 int calculateRemainingHours = 0;
                 int convertTimeHours = Integer.parseInt(split[0]);
                 int convertTimeMinutes = Integer.parseInt(split[1]);
-
-//                if (convertTimeHours >= 6 && convertTimeHours < 12 || convertTimeHours == CommonConstants.TIME_19_HOUR) {                        /* Calculate Seconds Maybe if needed */
-//                    mLiveWallpaperType = CommonConstants.LIVE_WALLPAPER_MORNING;
-//                    calculateRemainingHours = 12 - convertTimeHours;
-//                } else if (convertTimeHours >= 12 && convertTimeHours < 16) {
-//                    mLiveWallpaperType = CommonConstants.LIVE_WALLPAPER_MIDDAY;
-//                    calculateRemainingHours = 16 - convertTimeHours;
-//                } else if (convertTimeHours >= 16 && convertTimeHours < 18) {
-//                    mLiveWallpaperType = CommonConstants.LIVE_WALLPAPER_SUNSET;
-//                    calculateRemainingHours = 18 - convertTimeHours;
-//                } else if (convertTimeHours < 6 || (convertTimeHours == CommonConstants.TIME_18_HOUR || convertTimeHours == CommonConstants.TIME_23_HOUR)) {
-//                    mLiveWallpaperType = CommonConstants.LIVE_WALLPAPER_NIGHT;
-//                    if (convertTimeHours == CommonConstants.TIME_18_HOUR) {
-//                        calculateRemainingHours = 1;
-//                    } else if (convertTimeHours == CommonConstants.TIME_22_HOUR) {
-//                        calculateRemainingHours = CommonConstants.REMAINING_8_HOUR;
-//                    } else if (convertTimeHours == CommonConstants.TIME_23_HOUR) {
-//                        calculateRemainingHours = CommonConstants.REMAINING_7_HOUR;
-//                    } else {
-//                        calculateRemainingHours = 6 - convertTimeHours;
-//                    }
-//                }
 
                 if (convertTimeHours >= CommonConstants.DEFAULT_TIME_MORNING_START && convertTimeHours < CommonConstants.DEFAULT_TIME_MORNING_END) {                        /* Calculate Seconds Maybe if needed */
                     mLiveWallpaperType = CommonConstants.WALLPAPER_MORNING;
