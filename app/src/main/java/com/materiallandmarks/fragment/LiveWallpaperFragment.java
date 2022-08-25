@@ -30,28 +30,12 @@ public class LiveWallpaperFragment extends Fragment {
             if(wallpaperRecyclerView != null) {
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
                 lLayout = new GridLayoutManager(getActivity(), 2, GridLayoutManager.VERTICAL, true);
-//                lLayout.scrollToPositionWithOffset(0, 0);
-//                lLayout.setReverseLayout(true);
-//                lLayout.setStackFromEnd(true);
-//                lLayout.layoutDecoratedWithMargins(wallpaperRecyclerView, 0, 0, 0, 0);
-//                GridLayout.LayoutParams layoutParams=new GridLayout.LayoutParams();
-
-//                lLayout.setMeasuredDimension(165, 220);
-//                linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
                 ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) wallpaperRecyclerView.getLayoutParams();
                 String margin = CommonUtil.setMarginAccordingToScreen(getActivity());
                 marginLayoutParams.setMargins(Integer.parseInt(margin), 0, 0, 0);
-//                marginLayoutParams.setMarginStart(0);
-//                wallpaperRecyclerView.setLayoutParams(marginLayoutParams);
                 wallpaperRecyclerView.setLayoutManager(lLayout);
                 ArrayList<String> names = new ArrayList<>();
-//                names.add(0, CommonConstants.MAZARE_QUAID);
-//                names.add(1, CommonConstants.FAISAL_MOSQUE);
-//                names.add(2, CommonConstants.BADSHAHI_MOSQUE);
-//                names.add(3, CommonConstants.KHYBER_PASS);
-//                names.add(4, CommonConstants.MONUMENT);
-//                names.add(5, CommonConstants.MINARE_PAK);
-//                names.add(CommonConstants.RANDOM);
+
                 names.add(CommonConstants.FAISAL_MOSQUE);
                 names.add(CommonConstants.MAZARE_QUAID);
                 names.add(CommonConstants.BADSHAHI_MOSQUE);
@@ -64,7 +48,6 @@ public class LiveWallpaperFragment extends Fragment {
                 wallpaperRecyclerView.setAdapter(mWallpaperAdapter);
 
                 names.add(6, CommonConstants.RANDOM);
-//                wallpaperRecyclerView.getLayoutManager().scrollToPosition(3);
                 mWallpaperAdapter.notifyItemInserted(6);
                 mWallpaperAdapter.notifyDataSetChanged();
             }

@@ -40,15 +40,12 @@ public class MainActivity extends ActionBarActivity {
         try {
             setContentView(R.layout.activity_main);
             final ImageView splashImageView = (ImageView) findViewById(R.id.main_activity_splash_imageview);
-        //    final ImageView imageViewer = (ImageView)findViewById(R.id.image_viewer);
-         //   Button setWallpaperBtn = (Button)findViewById(R.id.set_wallpaper_button);
 
             MobileAds.initialize(this, getString(R.string.admob_app_id));
 
             mAdView = (AdView) findViewById(R.id.adView);
             AdRequest adRequest = new AdRequest.Builder()
                     .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-//                    .addTestDevice("9C29480299CB76E49545EC6047B53472")
                     .build();
             mAdView.loadAd(adRequest);
 
@@ -62,7 +59,6 @@ public class MainActivity extends ActionBarActivity {
                 @Override
                 public void onAdFailedToLoad(int i) {
                     super.onAdFailedToLoad(i);
-//                    mAdView.setVisibility(View.GONE);
                 }
 
                 @Override
@@ -85,8 +81,6 @@ public class MainActivity extends ActionBarActivity {
                     Log.i("Ads", "onAdClosed");
                 }
             });
-
-//            String android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
 
             if(splashImageView != null) {
                 splashImageView.setImageBitmap(CommonUtil.getPhotoFromAssets(this, "splash_image.jpg"));
@@ -160,9 +154,6 @@ public class MainActivity extends ActionBarActivity {
         try {
             Intent intent = new Intent(WallpaperManager.ACTION_CHANGE_LIVE_WALLPAPER);
             intent.putExtra(WallpaperManager.EXTRA_LIVE_WALLPAPER_COMPONENT, new ComponentName(this, MinarePakLandmarkService.class));
-//            Bundle args = new Bundle();
-//            args.putInt("wallpaperName", 987);
-//            intent.putExtras(args);
             startActivity(intent);
         } catch (Exception e) {
             e.printStackTrace();

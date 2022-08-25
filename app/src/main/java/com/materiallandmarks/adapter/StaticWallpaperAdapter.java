@@ -37,7 +37,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
         super(context, getName);
         mGetCityName = getName;
         mFragmentActivity = fragmentActivity;
-        //    getValue = new ArrayList<String>(Collections.nCopies(100, "empty"));
     }
 
     @Override
@@ -217,7 +216,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
                         staticViewHolder.itemSetButton.setTag(R.id.wallpaper_preview_img, CommonConstants.WALLPAPER_AFTERNOON);
                         setIconImage(staticViewHolder, landmark, CommonConstants.WALLPAPER_AFTERNOON);
                         setPreviewImage(staticViewHolder, uri);
-//                        addPreviewFragment(landmark, CommonConstants.WALLPAPER_AFTERNOON);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -240,7 +238,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
                         staticViewHolder.itemSetButton.setTag(R.id.wallpaper_preview_img, CommonConstants.WALLPAPER_EVENING);
                         setIconImage(staticViewHolder, landmark, CommonConstants.WALLPAPER_EVENING);
                         setPreviewImage(staticViewHolder, uri);
-//                        addPreviewFragment(landmark, CommonConstants.WALLPAPER_EVENING);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -263,7 +260,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
                         staticViewHolder.itemSetButton.setTag(R.id.wallpaper_preview_img, CommonConstants.WALLPAPER_NIGHT);
                         setIconImage(staticViewHolder, landmark, CommonConstants.WALLPAPER_NIGHT);
                         setPreviewImage(staticViewHolder, uri);
-//                        addPreviewFragment(landmark, CommonConstants.WALLPAPER_NIGHT);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -286,7 +282,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
                         staticViewHolder.itemSetButton.setTag(R.id.wallpaper_preview_img, CommonConstants.WALLPAPER_NIGHT_BLACK);
                         setIconImage(staticViewHolder, landmark, CommonConstants.WALLPAPER_NIGHT_BLACK);
                         setPreviewImage(staticViewHolder, uri);
-//                        addPreviewFragment(landmark, CommonConstants.WALLPAPER_NIGHT);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -294,13 +289,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
                 }
             });
 
-//            staticViewHolder.itemMorningImg.setOnTouchListener(new View.OnTouchListener() {
-//                @Override
-//                public boolean onTouch(View view, MotionEvent motionEvent) {
-//                    view.playSoundEffect(android.view.SoundEffectConstants.CLICK);
-//                    return false;
-//                }
-//            });
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -376,24 +364,6 @@ public class StaticWallpaperAdapter extends CustomRecyclerAdapter {
         }
         return 0;
     }
-
-//    @Override
-//    public long getItemId(int position) {
-//        if(mGetName == null || position < 0 || position >= mGetName.size()) {
-//            return -1;
-//        }
-//        try {
-//            Long listIndex = mGetName.get(position);
-//            if(listIndex == null) {
-//                return -1;
-//            }
-//            return listIndex;
-//        } catch(Exception e) {
-//            e.printStackTrace();
-//        }
-//        return -1;
-//    }
-
 
     public class StaticViewHolder extends CustomRecyclerAdapter.ViewHolder {
         public ImageView itemPreviewImg;

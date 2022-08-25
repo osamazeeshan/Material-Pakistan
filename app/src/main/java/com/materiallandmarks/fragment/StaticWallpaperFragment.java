@@ -39,10 +39,7 @@ public class StaticWallpaperFragment extends Fragment {
                 names.add(CommonConstants.MONUMENT);
                 names.add(CommonConstants.KHYBER_PASS);
                 mStaticWallpaperAdapter = new StaticWallpaperAdapter(names, getActivity().getApplicationContext(), getActivity());
-             //   mStaticWallpaperAdapter.setRecyclerView(wallpaperRecyclerView);
                 wallpaperRecyclerView.setAdapter(mStaticWallpaperAdapter);
-                //   mWallpaperAdapter.notifyDataSetChanged();
-
             }
 
             return rootView;

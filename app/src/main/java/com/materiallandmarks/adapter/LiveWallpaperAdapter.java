@@ -36,19 +36,16 @@ public class LiveWallpaperAdapter extends CustomRecyclerAdapter {
     public ArrayList<String> getValue;
     public LiveViewHolder mHolder;
     private RecyclerView mRecyclerView;
-    //private final View.OnClickListener mOnClickListener = new View.OnClickListener();
 
     public LiveWallpaperAdapter(ArrayList<String> cityNames, Context context) {
         super(context, cityNames);
         mGetCityName = cityNames;
-    //    getValue = new ArrayList<String>(Collections.nCopies(100, "empty"));
     }
 
     @Override
     protected ArrayList<String> getIconName (String cityName) {
         try {
             ArrayList<String> wallpaperIconList = new ArrayList<>();
-//            wallpaperIconList.add(String.format("@drawable/windowcolor", cityName));
             wallpaperIconList.add(String.format("@drawable/live_%s_icon", cityName));
             return wallpaperIconList;
         } catch(Exception e) {
@@ -72,8 +69,6 @@ public class LiveWallpaperAdapter extends CustomRecyclerAdapter {
                 @Override
                 public void onClick(View view) {
                     int itemPosition = mRecyclerView.getChildLayoutPosition(view);
-//                    String wallpaperCity = mGetCityName.get(itemPosition);
-//                    String[] splitCity = wallpaperCity.split("_");
                     callWallpaperService(mGetCityName.get(itemPosition), view.getContext());
                 }
             });
@@ -92,18 +87,10 @@ public class LiveWallpaperAdapter extends CustomRecyclerAdapter {
             if(liveViewHolder == null) {
                 return;
             }
-//            int p = getItemCount() - 1 - position;
             String getName = mGetCityName.get(position);
             ArrayList<String> iconNameList = getIconName(getName);
             if(iconNameList != null) {
-//                String uri = String.format("@drawable/ic_3d_rotation_black_24dp");
                 String uri = String.format(iconNameList.get(0));
-
-//                if(getName.equals("khi_quaid")) {
-//                    uri = "@drawable/icongreen";
-//                } else {
-//                    uri = "@drawable/live_khyber_icon";  // where myresource (without the extension) is the file
-//                }
                 int imageResource = mContext.getResources().getIdentifier(uri, null, mContext.getPackageName());
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     Drawable drawable = mContext.getResources().getDrawable(imageResource, mContext.getTheme());
@@ -166,15 +153,11 @@ public class LiveWallpaperAdapter extends CustomRecyclerAdapter {
     }
 
     class LiveViewHolder extends CustomRecyclerAdapter.ViewHolder {
-//        public TextView itemName;
-//        public TextView itemLocation;
         private ImageView wallpaperImage;
 
         public LiveViewHolder(View itemView) {
             super(itemView);
             wallpaperImage = (ImageView) itemView.findViewById(R.id.wallpaper_image_view);
-//            itemName = (TextView) itemView.findViewById(R.id.item_name_text_field);
-//            itemLocation = (TextView) itemView.findViewById(R.id.item_location_text_field);
         }
     }
 }

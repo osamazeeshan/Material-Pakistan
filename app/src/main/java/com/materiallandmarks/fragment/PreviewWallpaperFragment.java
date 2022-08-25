@@ -50,8 +50,6 @@ public class PreviewWallpaperFragment extends Fragment {
             mainActivity.setAdViewVisibility(false);
             if(wallpaperPreview != null) {
                 wallpaperPreview.setImageBitmap(getSelectedWallpaper(createFileName()));
-//                wallpaperPreview.setBackground(drawable);
-//                wallpaperPreview.setImageDrawable(drawable);
             }
 
             if(setWallpaperButton != null) {
@@ -61,12 +59,6 @@ public class PreviewWallpaperFragment extends Fragment {
                         try {
                             mainActivity.removePreviewFragment();
                             WallpaperManager myWallpaperManager = WallpaperManager.getInstance(view.getContext());
-
-//                            String uri = "@drawable/badshahi_mosque_evening";
-//                            int imageResource = getResources().getIdentifier(uri, null, getActivity().getPackageName());
-//                            myWallpaperManager.setResource(imageResource);
-
-//                            DisplayMetrics dimension = getDisplayMetrics(activity);
 
                             DisplayMetrics metrics = new DisplayMetrics();
                             getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -107,12 +99,6 @@ public class PreviewWallpaperFragment extends Fragment {
             return null;
         }
         try {
-//            Display d = w.getDefaultDisplay();
-//            Measuredwidth = d.getWidth();
-//            Measuredheight = d.getHeight();
-//            WallpaperManager.getDesiredMinimumWidth();
-//            WallpaperManager.getDesiredMinimumHeight();
-
             InputStream inputStream = getActivity().getAssets().open(wallpaperName);
             if (inputStream == null) {
                 return null;
