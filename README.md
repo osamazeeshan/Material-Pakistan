@@ -42,7 +42,7 @@ Ever since we were young we saw that there was very little Pakistani content in 
 
 
 
-### All of the wallpapers were designed by <a href="u">Salman Afzal</a>.
+### All of the wallpapers were designed by <a href="https://www.linkedin.com/in/imsalmanafzal/">Salman Afzal</a>.
 
 
 ## Note
